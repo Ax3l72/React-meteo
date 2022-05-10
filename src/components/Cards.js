@@ -1,15 +1,11 @@
-// import api from "../config/axios"
-const Cards = (props) => {
-    // function test(){
-    //     api.get("https://api.openweathermap.org/data/2.5/weather?q=le%20mans&lang=fr&units=metric&appid=48fe072d754d789378b9e722f15478f3")
-    //   .then((res) => {
-    //     console.log('getData', res.data)
-    //   })
-    //   .catch((err) => console.log(err));
-    // }
+import { useSelector } from "react-redux";
+
+const Cards = () => {
+    
+    const data = useSelector((state) => state.weather.data);
     return (
         <div>
-            <h1>okcard</h1>
+            <h1>{(data.name === undefined) ? "Recherche une ville": data.name+', '+data.main.temp+'°, ressenti '+data.main.feels_like+'° ('+data.main.temp_min+"° min & "+data.main.temp_max+"° max), "+data.weather[0].description }</h1>
         </div>
     )
 }
