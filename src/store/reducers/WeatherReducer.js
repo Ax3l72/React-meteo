@@ -20,6 +20,8 @@ export function WeatherReducer(state = initialState, action) {
       return state;
     case Actions.GET_WEATHER_DATA:
       return { ...state, data: action.payload };
+    case Actions.GET_WEATHER_DATA_WEEK:
+      return { ...state, data_week: action.payload };
   }
 }
 
