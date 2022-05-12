@@ -1,12 +1,11 @@
-import Cards from "../components/Cards"
+import Weather from "../components/Weather"
 import Input from "../components/Input"
 
-const Home = (props) => {
+export default function Home (props) {
     return (
         <div>
             <Input/>
-            <Cards/>
+            <Weather/>
         </div>
     )
 }
-export default Home

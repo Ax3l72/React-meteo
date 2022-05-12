@@ -1,8 +1,8 @@
 import React from "react";
 import { store } from "../store";
 import { getWeather, getWeatherWeek } from "../store/actions/WeatherActions";
-import { Container, Row, InputGroup, FormControl, Button } from "react-bootstrap"; 
-const Input = (props) => {
+import { Container, Row, InputGroup, FormControl, Button } from "react-bootstrap";
+export default function Input(props) {
   function getValue() {
     var input = document.getElementById("city").value;
     if (input.length > 0) {
@@ -12,10 +12,6 @@ const Input = (props) => {
   }
 
   return (
-    // <div>
-    //   <input id="city" type="text" placeholder="Trouve ta ville"></input>
-    //   <button onClick={(e) => getValue(e)}>Find</button>
-    // </div>
     <Container>
       <Row>
         <InputGroup className="my-5">
@@ -30,5 +26,3 @@ const Input = (props) => {
     </Container>
   );
 };
-
-export default Input;
