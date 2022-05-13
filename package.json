@@ -1,5 +1,6 @@
 {
   "name": "test-react",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "bootstrap": "^5.1.3",
+    "cross-env": "^7.0.3",
     "moment-timezone": "^0.5.34",
     "react": "^18.1.0",
     "react-bootstrap": "^2.3.1",
@@ -24,7 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "w:build": "cross-env BUILD_PATH='./dist/webapp' react-scripts build"
   },
   "eslintConfig": {
     "extends": [
