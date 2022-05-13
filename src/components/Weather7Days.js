@@ -31,11 +31,11 @@ export default function Weather7DAys(props) {
                                 <br />
                                 Temp max {el.temp.min}°
                                 <br />
-                                Vent {el.wind_speed}°
+                                Vent {el.wind_speed} km/h
                                 <br />
-                                Humidité {el.humidity}°
+                                Humidité {el.humidity}%
                                 <br />
-                                UV {el.uvi}
+                                UV {el.uvi}°
                             </Accordion.Body>
                         </Accordion.Item>
                     )
