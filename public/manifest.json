@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Weteo",
+  "name": "La meteo sur le web en direct",
   "icons": [
     {
       "src": "favicon.ico",

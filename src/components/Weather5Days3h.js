@@ -23,7 +23,7 @@ export default function Weather5Days3h(props) {
         <Row className="mb-5">
             {(data_week === undefined) ? "" : data_week.list.map((el, index) => {
                 return (
-                    <Col key={`week-${index}`}
+                    <Col sm key={`week-${index}`}
                     style={{ padding: '0px 0px 40px 0px' }}>
                         <Card
                             bg={variant.toLowerCase() === 'light' ? 'white' : 'dark'} border={variant.toLowerCase() === 'light' ? 'dark' : 'white'}

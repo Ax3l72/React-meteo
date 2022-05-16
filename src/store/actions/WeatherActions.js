@@ -15,7 +15,7 @@ const apiK = process.env.REACT_APP_API_WEATHER_KEY
 export const getWeather = (country) => {
   return (dispatch) => {
     return axios
-      .get("http://api.openweathermap.org/data/2.5/weather?", {
+      .get("https://api.openweathermap.org/data/2.5/weather?", {
         params: {
           q: country,
           units: "metric",
