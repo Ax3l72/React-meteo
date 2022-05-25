@@ -25,7 +25,7 @@ export default function Weather7DAys(props) {
                 {(data_hebdo === undefined) ? "" : data_hebdo.daily.map((el, index) => {
                     return (
                         < Accordion.Item key={`colps-${index}`} eventKey={`colps-${index}`}>
-                            <Accordion.Header>{time(timstp(el.dt), "dddd DD MMMM")}, {el.temp.day}°, ressenti de {el.feels_like.day}°, {el.weather[0].description} <img alt={el.weather[0].description} src={`http://openweathermap.org/img/wn/${el.weather[0].icon}.png`} /> </Accordion.Header>
+                            <Accordion.Header>{time(timstp(el.dt), "dddd DD MMMM")}, {el.temp.day}°, ressenti de {el.feels_like.day}°, {el.weather[0].description} <img alt={el.weather[0].description} src={`https://openweathermap.org/img/wn/${el.weather[0].icon}.png`} /> </Accordion.Header>
                             <Accordion.Body>
                                 Temp min {el.temp.min}°
                                 <br />

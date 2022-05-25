@@ -29,7 +29,7 @@ export default function Weather5Days3h(props) {
                             bg={variant.toLowerCase() === 'light' ? 'white' : 'dark'} border={variant.toLowerCase() === 'light' ? 'dark' : 'white'}
                             style={{ width: '18rem' }}
                             text={variant.toLowerCase() === 'light' ? 'dark' : 'white'}>
-                            <Card.Img style={{ width: '150px', heigth: "150px" }} variant="top" src={`http://openweathermap.org/img/wn/${el.weather[0].icon}.png`} />
+                            <Card.Img style={{ width: '150px', heigth: "150px" }} variant="top" src={`https://openweathermap.org/img/wn/${el.weather[0].icon}.png`} />
                             <Card.Body>
                                 <Card.Title>{time(timstp(el.dt), "DD MMMM YYYY à HH:mm")}</Card.Title>
                                 <Card.Text>
