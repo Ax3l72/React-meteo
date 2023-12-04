@@ -89,7 +89,7 @@
   },
   "devDependencies": {
     "electron": "^22.3.25",
-    "electron-builder": "^23.0.3",
+    "electron-builder": "^24.9.1",
     "wait-on": "^6.0.1"
   }
 }
